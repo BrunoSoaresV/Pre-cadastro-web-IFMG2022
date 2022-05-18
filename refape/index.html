@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Pr&eacute;-cadastro</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css"/>
+    <a href="index.html"> Pr&eacute;-cadastro</a>
+    <br>
+    <a href="listagem.php"> Funcion&aacute;rios j&aacute; cadastrados</a>
+</head>
+<body>
+<h1>Preencha o formul&aacute;rio abaixo para o pr&eacute;-cadastro dos funcion&aacute;rios: </h1>
+<form id="cadastro" method="POST" action="cadastro.php" name="cadastro" >
+
+<label for="nome"> Nome completo: </label> 
+<input type="text" name="nome" id="nome" placeholder="Informe o nome do funcion&aacute;rio"> <br> <br>
+<label for="cpf"> CPF: </label> 
+<input type="text" name="cpf" id="cpf"  placeholder="Informe o CPF do funcion&aacute;rio"> <br><br>
+
+<label for="ra"> Registro acad&ecirc;mico:  </label> 
+<input type="text" name="ra" id="ra" placeholder="Informe o RA do funcion&aacute;rio"> <br><br>
+
+<label for="ocupacao"> Ocupa&ccedil;&atilde;o: </label> 
+  <select null name="ocupacao" id="ocupacao" >
+    <option value=""></option>
+    <option value="Professor">Professor</option>
+    <option value="Tecnico administrativo">T&eacute;cnico administrativo</option>
+    <option value="Terceirizado">Terceirizado</option>
+  </select> <br><br>
+<label for="data_nascimento"> Data de nascimento:  </label> 
+<input type="date" name="data_nascimento" id="data_nascimento"> 
+<br> <br>
+<button onclick="document.frmCadastro.submit();"> Enviar </button>
+<br> <br>
+<button type="reset"> Cancelar </button>
+</form> 
+</body>
+</html>
